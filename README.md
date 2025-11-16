@@ -1,0 +1,2 @@
+# AAFMbenchmark
+Benchmark for AAFMs
