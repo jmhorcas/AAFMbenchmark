@@ -1,0 +1,11 @@
+Model Name,Operation,Result,Repetitions,Time_Mean (s),Time_Median (s),Time_StdDev (s),Timeout (s)
+Pizza.uvl,Satisfiable,EXECUTION ERROR: cannot access local variable 't' where it is not associated with a value,30,0.0,0.0,0.0,
+Pizza.uvl,CoreFeatures,EXECUTION ERROR: cannot access local variable 't' where it is not associated with a value,30,0.0,0.0,0.0,
+Pizza.uvl,DeadFeatures,EXECUTION ERROR: cannot access local variable 't' where it is not associated with a value,30,0.0,0.0,0.0,
+Pizza.uvl,FalseOptionalFeatures,EXECUTION ERROR: cannot access local variable 't' where it is not associated with a value,30,0.0,0.0,0.0,
+Pizza.uvl,ConfigurationsNumber,57,30,0.10181622850000001,0.101568554,0.012528217897434636,None
+Pizza_z3.uvl,Satisfiable,EXECUTION ERROR: cannot access local variable 't' where it is not associated with a value,30,0.0,0.0,0.0,
+Pizza_z3.uvl,CoreFeatures,EXECUTION ERROR: cannot access local variable 't' where it is not associated with a value,30,0.0,0.0,0.0,
+Pizza_z3.uvl,DeadFeatures,EXECUTION ERROR: cannot access local variable 't' where it is not associated with a value,30,0.0,0.0,0.0,
+Pizza_z3.uvl,FalseOptionalFeatures,EXECUTION ERROR: cannot access local variable 't' where it is not associated with a value,30,0.0,0.0,0.0,
+Pizza_z3.uvl,ConfigurationsNumber,105,30,0.1882192344666667,0.18957559100000002,0.019195951400228006,None
