@@ -62,33 +62,3 @@ def get_transformed_model(fm_model: Any, transformation_type: str) -> Any:
     if transformation_type == 'Z3':
         return FmToZ3(fm_model).transform()
     raise ValueError(f"Unknown transformation type: {transformation_type}")
-
-
-def get_processed_model_names(filename: str) -> set[str]:
-    """
-    Reads the existing CSV file and returns a set of model names already processed.
-    Returns an empty set if the file does not exist or is empty/corrupt.
-    """
-    file_path = Path(filename)
-    if not file_path.exists():
-        return set()
-
-    processed_models: set[str] = set()
-    try:
-        with file_path.open('r', newline='', encoding='utf-8') as csvfile:
-            reader = csv.DictReader(csvfile)
-            
-            # Ensure the required header for model name exists
-            if KEY_MODEL_NAME not in reader.fieldnames:
-                print(f"⚠️ Warning: CSV file '{filename}' exists but lacks the required header '{KEY_MODEL_NAME}'. Rerunning all models.")
-                return set()
-
-            for row in reader:
-                # We collect all model names found in the file
-                if row.get(KEY_MODEL_NAME):
-                    processed_models.add(row[KEY_MODEL_NAME])
-    except Exception as e:
-        print(f"⚠️ Warning: Could not read existing CSV '{filename}' for processed models. Rerunning all models. Error: {e}")
-        return set()
-    
-    return processed_models
