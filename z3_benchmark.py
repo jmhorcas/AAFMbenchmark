@@ -1,5 +1,7 @@
 import statistics
 import argparse
+import multiprocessing
+from multiprocessing.managers import DictProxy
 from pathlib import Path
 from typing import Any, Optional, Callable
 
@@ -13,6 +15,7 @@ from flamapy.metamodels.z3_metamodel.operations import (
     Z3DeadFeatures,
     Z3FalseOptionalFeatures
 )
+from custom_operations.z3_configurations_number import Z3ConfigurationsNumber
 
 from utils.timer import Timer
 from utils.file_manager import get_models_to_run
@@ -33,62 +36,109 @@ from utils.benchmark_utils import (
 N_REPETITIONS = 30
 PRECISION = 4
 OUTPUT_CSV = f'z3_benchmark_results.csv'
-TIMEOUT = None
+TIMEOUT = 60
 OPERATIONS = {'Satisfiable': Z3Satisfiable, 
               'CoreFeatures': Z3CoreFeatures, 
               'DeadFeatures': Z3DeadFeatures, 
-              'FalseOptionalFeatures': Z3FalseOptionalFeatures}
+              'FalseOptionalFeatures': Z3FalseOptionalFeatures,
+              'ConfigurationsNumber': Z3ConfigurationsNumber}
+
+
+def worker_execute(op_class: Callable, fm_path: str, shared_data: DictProxy) -> None:
+    try:
+        fm_model = UVLReader(fm_path).transform()
+    except Exception as e:
+        shared_data['status'] = f'ERROR: reading FM model from {fm_path}: {e}'
+        return
+
+    try:
+        z3_model = FmToZ3(fm_model).transform()
+    except Exception as e:
+        shared_data['status'] = f'ERROR: transforming FM to Z3 model from {fm_path}: {e}'
+        return
+
+    op = op_class()
+    def report_progress(configurations_number: int) -> None:
+        shared_data['partial_result'] = configurations_number
+    if op.__class__ == Z3ConfigurationsNumber:
+        op.set_progress_reporter(report_progress)
+
+    try:
+        with Timer(logger=None) as timer:
+            op.execute(z3_model)
+        result = op.get_result()
+        shared_data['final_result'] = result
+        shared_data['elapsed_time'] = timer.elapsed_time
+        shared_data['status'] = 'COMPLETED'
+    except Exception as e:
+        shared_data['status'] = f'ERROR: Execution failed for {op.__class__.__name__}: {e}'
 
 
 def analyze_model(fm_path: str,
                   operations: list[Callable],
                   n_reps: int = N_REPETITIONS) -> None:
     model_name = Path(fm_path).stem
-    try:
-        fm_model = UVLReader(fm_path).transform()
-    except Exception as e:
-        print(f'❌ Error reading FM model from {fm_path}: {e}')
-
-    try:
-        z3_model = FmToZ3(fm_model).transform()
-    except Exception as e:
-        print(f'❌ Error transforming FM to Z3 model from {fm_path}: {e}')
-        return
     for operation in operations:
-        result = execute_operation_on_model(model_name, z3_model, operation, n_reps)
+        result = execute_operation_on_model(model_name, fm_path, operation, n_reps)
         if result:
             write_results_incrementally(OUTPUT_CSV, CSV_HEADERS, [result])   
 
 
 def execute_operation_on_model(model_name: str,
-                               z3_model: Z3Model,
-                               operation: Callable,
+                               fm_path: str,
+                               Operation: Callable,
                                n_reps: int = N_REPETITIONS) -> Optional[dict[str, Any]]:
     times: list[float] = []
     result = None
+    is_timeout = False
     for _ in range(n_reps):
         try:
-            op = operation()
-            with Timer(logger=None) as timer:
-                op.execute(z3_model)
-            result = op.get_result()
-            times.append(timer.elapsed_time)
+            with multiprocessing.Manager() as manager:
+                shared_data = manager.dict({
+                    'status': 'RUNNING',
+                    'partial_result': 0,
+                    'final_result': None
+                })
+                process = multiprocessing.Process(target=worker_execute, args=(Operation, 
+                                                                               fm_path, 
+                                                                               shared_data))
+                process.start()
+                process.join(timeout=TIMEOUT)  # Wait for completion or timeout
+                if process.is_alive():  # Timeout occurred
+                    process.terminate()  # Stop the process (SIGTERM/SIGKILL)
+                    process.join()  # Wait for termination (necessary to free resources)
+
+                    # Report timeout status and partial result
+                    result = shared_data['partial_result']
+                    shared_data['status'] = 'TIMEOUT'
+                    is_timeout = True
+                    break  # No need to continue repetitions on timeout
+                if shared_data['status'] == 'COMPLETED':
+                    result = shared_data['final_result']
+                    result = len(result) if isinstance(result, list) else result
+                    times.append(shared_data['elapsed_time'])
+                elif shared_data['status'].startswith('ERROR'):
+                    result = shared_data['status']
+                    print(f'❌ Worker Error executing {Operation.__name__} on model from {model_name}: {result}')
+                    break  # Stop on error
         except Exception as e:
-            print(f'❌ Error executing {operation.__name__} on model from {model_name}: {e}')
+            print(f'❌ Error executing {Operation.__name__} on model from {model_name}: {e}')
             return
-    mean_time = round(statistics.mean(times), PRECISION)
-    median_time = round(statistics.median(times), PRECISION)
-    stddev_time = round(statistics.stdev(times), PRECISION) if len(times) > 1 else 0.0
-    
+    if times:
+        mean_time = round(statistics.mean(times), PRECISION)
+        median_time = round(statistics.median(times), PRECISION)
+        stddev_time = round(statistics.stdev(times), PRECISION) if len(times) > 1 else 0.0
+    else:
+        mean_time = median_time = stddev_time = 0.0
     row_data = {
             KEY_MODEL_NAME: model_name,
-            KEY_OPERATION: operation.__name__,
-            KEY_RESULT: 'True' if result else 'False',
+            KEY_OPERATION: Operation.__name__,
+            KEY_RESULT: str(result),
             KEY_REPETITIONS: len(times),
             KEY_TIME_MEAN: mean_time,
             KEY_TIME_MEDIAN: median_time,
             KEY_TIME_STDDEV: stddev_time,
-            KEY_TIMEOUT: str(TIMEOUT)
+            KEY_TIMEOUT: str(TIMEOUT) if is_timeout else str(None)
         }
     return row_data
 
