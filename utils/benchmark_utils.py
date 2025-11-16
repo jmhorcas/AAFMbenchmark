@@ -1,12 +1,6 @@
-# utils/benchmark_utils.py
-
 import csv
-import os
 from pathlib import Path
 from typing import Any
-
-from flamapy.metamodels.fm_metamodel.transformations import UVLReader
-from flamapy.metamodels.z3_metamodel.transformations import FmToZ3
 
 
 KEY_MODEL_NAME = 'Model Name'
@@ -48,17 +42,3 @@ def write_results_incrementally(filename: str,
         if not file_exists:
             writer.writeheader()
         writer.writerows(data)
-
-
-def load_fm_model(model_path: str):
-    """Loads and returns the Feature Model (FM) from a UVL file."""
-    return UVLReader(model_path).transform()
-
-
-def get_transformed_model(fm_model: Any, transformation_type: str) -> Any:
-    """Applies the necessary transformation to the FM."""
-    if transformation_type == 'FM':
-        return fm_model
-    if transformation_type == 'Z3':
-        return FmToZ3(fm_model).transform()
-    raise ValueError(f"Unknown transformation type: {transformation_type}")
