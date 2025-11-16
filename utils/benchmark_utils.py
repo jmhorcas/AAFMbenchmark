@@ -6,7 +6,7 @@ from typing import Any
 KEY_MODEL_NAME = 'Model Name'
 KEY_OPERATION = 'Operation'
 KEY_RESULT = 'Result'
-KEY_REPETITIONS = 'Repetitions'
+KEY_RUNS = 'Runs'
 KEY_TIME_MEAN = 'Time_Mean (s)'
 KEY_TIME_MEDIAN = 'Time_Median (s)'
 KEY_TIME_STDDEV = 'Time_StdDev (s)'
@@ -17,7 +17,7 @@ CSV_HEADERS: list[str] = [
     KEY_MODEL_NAME, 
     KEY_OPERATION, 
     KEY_RESULT, 
-    KEY_REPETITIONS, 
+    KEY_RUNS, 
     KEY_TIME_MEAN, 
     KEY_TIME_MEDIAN, 
     KEY_TIME_STDDEV,

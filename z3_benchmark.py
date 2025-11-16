@@ -25,7 +25,7 @@ from utils.benchmark_utils import (
     KEY_MODEL_NAME, 
     KEY_OPERATION, 
     KEY_RESULT, 
-    KEY_REPETITIONS, 
+    KEY_RUNS, 
     KEY_TIME_MEAN, 
     KEY_TIME_MEDIAN, 
     KEY_TIME_STDDEV,
@@ -33,7 +33,7 @@ from utils.benchmark_utils import (
 )
 
 
-N_REPETITIONS = 30
+N_RUNS = 30
 PRECISION = 4
 OUTPUT_CSV = f'z3_benchmark_results.csv'
 TIMEOUT = 60
@@ -76,10 +76,10 @@ def worker_execute(op_class: Callable, fm_path: str, shared_data: DictProxy) -> 
 
 def analyze_model(fm_path: str,
                   operations: list[Callable],
-                  n_reps: int = N_REPETITIONS) -> None:
+                  n_runs: int = N_RUNS) -> None:
     model_name = Path(fm_path).stem
     for operation in operations:
-        result = execute_operation_on_model(model_name, fm_path, operation, n_reps)
+        result = execute_operation_on_model(model_name, fm_path, operation, n_runs)
         if result:
             write_results_incrementally(OUTPUT_CSV, CSV_HEADERS, [result])   
 
@@ -87,11 +87,11 @@ def analyze_model(fm_path: str,
 def execute_operation_on_model(model_name: str,
                                fm_path: str,
                                Operation: Callable,
-                               n_reps: int = N_REPETITIONS) -> Optional[dict[str, Any]]:
+                               n_runs: int = N_RUNS) -> Optional[dict[str, Any]]:
     times: list[float] = []
     result = None
     is_timeout = False
-    for _ in range(n_reps):
+    for _ in range(n_runs):
         try:
             with multiprocessing.Manager() as manager:
                 shared_data = manager.dict({
@@ -134,7 +134,7 @@ def execute_operation_on_model(model_name: str,
             KEY_MODEL_NAME: model_name,
             KEY_OPERATION: Operation.__name__,
             KEY_RESULT: str(result),
-            KEY_REPETITIONS: len(times),
+            KEY_RUNS: len(times),
             KEY_TIME_MEAN: mean_time,
             KEY_TIME_MEDIAN: median_time,
             KEY_TIME_STDDEV: stddev_time,
