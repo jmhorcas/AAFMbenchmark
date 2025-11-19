@@ -1,0 +1,17 @@
+features
+	"Ice Cream" 
+		mandatory
+			Container 
+				alternative
+					Cup 
+					Cone 
+			Flavor 
+				or
+					Chocolate 
+					"Lemon Sorbet" 
+		optional
+			Vegan
+			Wafer 
+constraints
+	Chocolate => !Vegan
+	Wafer => Cup

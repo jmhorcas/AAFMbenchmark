@@ -1,0 +1,17 @@
+features
+	"Vending Machine"
+		mandatory
+			Transport
+				alternative
+					Spiral
+					Elevator
+			Items
+				or
+					"Ice Cream"
+					Chocolate
+					Drinks
+		optional
+			Cooling
+constraints
+	Spiral => !Drinks & !"Ice Cream"
+	("Ice Cream" | Drinks) => Cooling 

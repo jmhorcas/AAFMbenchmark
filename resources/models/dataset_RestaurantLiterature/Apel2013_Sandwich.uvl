@@ -1,0 +1,51 @@
+features
+	"Declarative Sandwiches, Inc" {abstract}
+		mandatory
+			Bread {abstract}
+				alternative
+					"Sesame bread"
+					"Wheat bread"
+					"Oat bread"
+					"White bread"
+			Vegetables {abstract}
+				or 
+					Lettuce
+					Tomatoes
+					Jalapenos
+					Pickles
+					Cucumber
+					Olives
+					Mushrooms
+					"Bell peppers"
+			Sauce {abstract}
+				or
+					"Honey Mustard"
+					Mayo 
+					"Mexican sauce"
+					"Sweet and sour sauce"
+			Cheese {abstract}
+				or
+					Cheddar
+					Mozzarella
+					"Pepper Jack"
+					Swiss
+			Protein {abstract}
+				alternative
+					Ham
+					Tuna
+					Turkey
+					Salami
+					Steak
+					Vegetarian
+					"Barbecue rib"
+					"Grilled Chicken"
+			Toast {abstract}
+				alternative
+					Toasted
+					"Not toasted"
+			Extras {abstract}
+				or
+					"More Cheese"
+					"More Meat"
+					Pepper 
+					Salt

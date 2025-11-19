@@ -1,0 +1,18 @@
+features
+	Toasty {abstract}
+		mandatory
+			Bread {abstract}
+				alternative
+					White 
+					WholeGrain 
+			Toppings {abstract} 
+				or
+					Ham 
+					Cheese 
+		optional
+			Extras {abstract} 
+				or
+					Mushroom 
+					Pineapple 
+constraints
+	Pineapple => Cheese

@@ -1,0 +1,17 @@
+features
+	Sandwich
+		mandatory
+			Bread
+		optional
+			Sauce
+				alternative
+					Ketchup
+					Mustard
+					Mayonnaise
+		optional
+			Cheese
+		optional
+			Toppings
+				alternative
+					Onion
+					Lettuce

@@ -1,0 +1,24 @@
+features
+	pizza 
+		mandatory
+			base 
+				alternative
+					wheat 
+					"gluten-free" 
+		optional
+			"cheesy crust" 
+			sauce 
+				alternative
+					tomato 
+					hollandaise 
+					nutella
+			topping 
+				or
+					banana 
+					mozarella 
+					salami 
+					broccoli 
+				optional
+					ham 
+constraints
+	banana => nutella

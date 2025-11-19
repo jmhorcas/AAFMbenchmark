@@ -1,0 +1,20 @@
+features
+	"Fast-Food Restaurant"
+		mandatory
+			Serve
+				alternative
+					"Serve Normal"
+					"Serve Fast"
+			Services
+				mandatory
+					Establishment
+				alternative
+					Auto
+					"Birthday's party"
+					Cafeteria
+					Delivery
+		optional
+			Cook
+constraints
+	Auto => "Serve Fast"
+	Cafeteria => !Cook
