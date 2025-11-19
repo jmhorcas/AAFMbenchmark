@@ -1,5 +1,6 @@
 import logging
-from flamapy.metamodels.fm_metamodel.transformations import UVLReader
+from flamapy.metamodels.fm_metamodel.transformations import UVLReader, FlatFM
+from flamapy.metamodels.fm_metamodel.transformations.refactorings import FeatureCardinalityRefactoring
 from flamapy.metamodels.z3_metamodel.transformations import FmToZ3
 from flamapy.metamodels.z3_metamodel.operations import (
     Z3Satisfiable,
@@ -23,25 +24,35 @@ logging.basicConfig(
 
 
 #MODEL = 'resources/models/uvl_models/icecream_attributes.uvl'
-MODEL = 'resources/models/Pizza_z3.uvl'
+MODEL = 'resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Wraps.uvl'
 #CONFIG = 'resources/configs/icecream_attributes.json'
 
 
 def main():
     fm_model = UVLReader(MODEL).transform()
-    print(fm_model)
+
+    # Flat the FM
+    flat_op = FlatFM(fm_model)
+    flat_op.set_maintain_namespaces(False)
+    fm_model = flat_op.transform()
+
+    # Refactor feature cardinalities
+    #fm_model = FeatureCardinalityRefactoring(fm_model).transform()
+
+    #print(fm_model)
     z3_model = FmToZ3(fm_model).transform()
-    print(z3_model)
+    #print(z3_model)
 
     #raise Exception('stop')
     result = Z3Satisfiable().execute(z3_model).get_result()
     print(f'Satisfiable: {result}')
+    raise Exception('stop')
 
-    configurations = Z3Configurations().execute(z3_model).get_result()
-    print(f'Configurations: {len(configurations)}')
-    for i, config in enumerate(configurations, 1):
-        config_str = ', '.join(f'{f}={v}' if not isinstance(v, bool) else f'{f}' for f,v in config.elements.items() if config.is_selected(f))
-        print(f'Config. {i}: {config_str}')
+    # configurations = Z3Configurations().execute(z3_model).get_result()
+    # print(f'Configurations: {len(configurations)}')
+    # for i, config in enumerate(configurations, 1):
+    #     config_str = ', '.join(f'{f}={v}' if not isinstance(v, bool) else f'{f}' for f,v in config.elements.items() if config.is_selected(f))
+    #     print(f'Config. {i}: {config_str}')
 
     core_features = Z3CoreFeatures().execute(z3_model).get_result()
     print(f'Core features: {core_features}')
@@ -57,6 +68,10 @@ def main():
     for attr in attributes:
         print(f' - {attr.name} ({attr.attribute_type})')
     
+    n_configs = Z3ConfigurationsNumber().execute(z3_model).get_result()
+    print(f'Configurations number: {n_configs}')
+
+    raise Exception('stop')
     attribute_optimization_op = Z3AttributeOptimization()
     attributes = {'Price': OptimizationGoal.MAXIMIZE,
                   'Kcal': OptimizationGoal.MINIMIZE}

@@ -1,0 +1,62 @@
+features
+    "Burger Bausatz"
+        mandatory
+            String name
+            Integer "Ticket number"
+            Integer "Table number"
+            "Burger Options" {abstract}
+                alternative
+                    "Classic Burger" {note '100% beef', Allergen {Gluten, Mustard, Sesame}, Price 10.90}
+                    "Vegetarian Burger" {note 'vegetable patty', Allergen {Gluten, Egg, Mustard}, Price 9.10}
+                    "Pulled Pork Burger" {note 'shredded pork shoulder + BBQ sauce', Allergen {Gluten, Mustard}, Price 12.50}
+        mandatory
+            Lettuce
+            "Homemade Sauce" {Allergen {Gluten, Egg, Lactose, Celery, Mustard}}
+            "Side Options" {abstract}
+                alternative
+                    "French Fries"
+                    "Potato Wedges"
+                    "Sweet Potato Fries"
+            Toppings {abstract, Price 0.90, note 'each additional ingredient costs extra'}
+                [4..*]
+                    Mayonnaise {Allergen {Egg, Mustard}}
+                    "Barbecue Sauce" {Allergen {Mustard}}
+                    "Sour Cream" {Allergen {Egg, Lactose, Mustard}}
+                    "Curry Sauce" {Allergen {Lactose, Celery, Mustard}}
+                    Mustard {Allergen {Mustard}}
+                    Ajvar
+                    Cheddar {note 'original burger cheese', Allergen {Lactose}}
+                    Mozzarella {Allergen {Lactose}}
+                    Feta {note 'sheep cheese', Allergen {Lactose}}
+                    "Blue Cheese" {note 'Gorgonzola', Allergen {Lactose}}
+                    Pineapple
+                    Pickles {Allergen {Mustard}}
+                    Cucumbers {note 'fresh'}
+                    Tomato {note 'fresh slices'}
+                    Mushrooms {note 'fresh'}
+                    "Spring onions" {note 'fresh'}
+                    "Crispy fried onions" {Allergen {Gluten}}
+                    "Mild pepperoni" {Allergen {Soy, Mustard}}
+                    "Spicy pepperoni" {Allergen {Soy, Mustard}}
+                    Coleslaw {note 'homemade sauerkraut salad', Allergen {Egg, Mustard, Sulfites}}
+                    Speck
+                    "Real Ham" {note 'Austrian, no pizza block'}
+                    "Brie Cheese" {Allergen {Lactose}}
+                    Leek {note 'fresh'}
+                    Parmesan {Allergen {Egg, Lactose}}
+                    Corn
+                    Onion {note 'fresh'}
+        optional
+            "Premium Toppings" {abstract}
+                or
+                    "Extra Patty" {abstract}
+                        alternative
+                            "Double Patty" {Price 2.90, Allergen {Mustard}}
+                            "Triple Patty" {Price 5.80, Allergen {Mustard}}
+                    "Extra Cheedar" {abstract}
+                        alternative
+                            "Double Cheddar" {Price 1.60, Allergen {Lactose}}
+                            "Triple Cheddar" {Price 2.40, Allergen {Lactose}}
+constraints
+    "Ticket number" > 0
+    "Table number" > 0

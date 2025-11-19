@@ -1,0 +1,266 @@
+Model Name,Operation,Result,Runs,Time_Mean (s),Time_Median (s),Time_StdDev (s),Timeout (s)
+LaGalerna_2020_Salads,Z3Satisfiable,True,30,0.0019,0.0018,0.0001,None
+LaGalerna_2020_Salads,Z3CoreFeatures,4,30,0.0052,0.0048,0.0013,None
+LaGalerna_2020_Salads,Z3DeadFeatures,0,30,0.0043,0.0042,0.0005,None
+LaGalerna_2020_Salads,Z3FalseOptionalFeatures,0,30,0.0037,0.0037,0.0002,None
+LaGalerna_2020_Salads,Z3ConfigurationsNumber,3664,0,0.0,0.0,0.0,60
+LaGalerna_2020_Burgers,Z3Satisfiable,True,30,0.0024,0.0022,0.0003,None
+LaGalerna_2020_Burgers,Z3CoreFeatures,7,30,0.0046,0.0044,0.0005,None
+LaGalerna_2020_Burgers,Z3DeadFeatures,0,30,0.0042,0.0041,0.0004,None
+LaGalerna_2020_Burgers,Z3FalseOptionalFeatures,0,30,0.0033,0.0032,0.0003,None
+LaGalerna_2020_Burgers,Z3ConfigurationsNumber,6049,0,0.0,0.0,0.0,60
+LaGalerna_2023_Salads,Z3Satisfiable,False,30,0.0009,0.0009,0.0001,None
+LaGalerna_2023_Salads,Z3CoreFeatures,0,30,0.0009,0.0009,0.0001,None
+LaGalerna_2023_Salads,Z3DeadFeatures,0,30,0.0009,0.0009,0.0,None
+LaGalerna_2023_Salads,Z3FalseOptionalFeatures,42,30,0.0022,0.0022,0.0,None
+LaGalerna_2023_Salads,Z3ConfigurationsNumber,0,30,0.0009,0.0009,0.0002,None
+LaGalerna_2020_Sandwiches,Z3Satisfiable,True,30,0.002,0.0019,0.0003,None
+LaGalerna_2020_Sandwiches,Z3CoreFeatures,6,30,0.0047,0.0047,0.0003,None
+LaGalerna_2020_Sandwiches,Z3DeadFeatures,0,30,0.0044,0.0044,0.0002,None
+LaGalerna_2020_Sandwiches,Z3FalseOptionalFeatures,0,30,0.0038,0.0038,0.0001,None
+LaGalerna_2020_Sandwiches,Z3ConfigurationsNumber,3716,0,0.0,0.0,0.0,60
+Bibra_2025_Wraps,Z3Satisfiable,False,30,0.0032,0.0032,0.0002,None
+Bibra_2025_Wraps,Z3CoreFeatures,0,30,0.0031,0.0031,0.0001,None
+Bibra_2025_Wraps,Z3DeadFeatures,0,30,0.0031,0.0031,0.0001,None
+Bibra_2025_Wraps,Z3FalseOptionalFeatures,74,30,0.0072,0.0072,0.0002,None
+Bibra_2025_Wraps,Z3ConfigurationsNumber,0,30,0.0032,0.0031,0.0002,None
+Bibra_2025_Dressings,Z3Satisfiable,True,30,0.0011,0.0011,0.0001,None
+Bibra_2025_Dressings,Z3CoreFeatures,1,30,0.0019,0.0019,0.0001,None
+Bibra_2025_Dressings,Z3DeadFeatures,0,30,0.0019,0.0018,0.0004,None
+Bibra_2025_Dressings,Z3FalseOptionalFeatures,0,30,0.0017,0.0017,0.0001,None
+Bibra_2025_Dressings,Z3ConfigurationsNumber,14,30,0.02,0.0205,0.0037,None
+Bibra_2025_Marinades,Z3Satisfiable,True,30,0.0011,0.001,0.0002,None
+Bibra_2025_Marinades,Z3CoreFeatures,1,30,0.0016,0.0016,0.0001,None
+Bibra_2025_Marinades,Z3DeadFeatures,0,30,0.0015,0.0015,0.0001,None
+Bibra_2025_Marinades,Z3FalseOptionalFeatures,0,30,0.0014,0.0013,0.0004,None
+Bibra_2025_Marinades,Z3ConfigurationsNumber,6,30,0.007,0.0071,0.0008,None
+Bibra_2025_FinalTouch,Z3Satisfiable,True,30,0.001,0.001,0.0002,None
+Bibra_2025_FinalTouch,Z3CoreFeatures,1,30,0.0016,0.0016,0.0001,None
+Bibra_2025_FinalTouch,Z3DeadFeatures,0,30,0.0015,0.0015,0.0003,None
+Bibra_2025_FinalTouch,Z3FalseOptionalFeatures,0,30,0.0014,0.0013,0.0001,None
+Bibra_2025_FinalTouch,Z3ConfigurationsNumber,12,30,0.0154,0.0159,0.0035,None
+Bibra_2025_Bases,Z3Satisfiable,True,30,0.001,0.0009,0.0001,None
+Bibra_2025_Bases,Z3CoreFeatures,1,30,0.0013,0.0013,0.0001,None
+Bibra_2025_Bases,Z3DeadFeatures,0,30,0.0012,0.0012,0.0002,None
+Bibra_2025_Bases,Z3FalseOptionalFeatures,0,30,0.0011,0.0011,0.0003,None
+Bibra_2025_Bases,Z3ConfigurationsNumber,5,30,0.0057,0.0058,0.0005,None
+Bibra_2025_Pokebowls,Z3Satisfiable,False,30,0.0035,0.0034,0.0004,None
+Bibra_2025_Pokebowls,Z3CoreFeatures,0,30,0.0033,0.0033,0.0001,None
+Bibra_2025_Pokebowls,Z3DeadFeatures,0,30,0.0035,0.0034,0.0003,None
+Bibra_2025_Pokebowls,Z3FalseOptionalFeatures,81,30,0.0117,0.0114,0.0015,None
+Bibra_2025_Pokebowls,Z3ConfigurationsNumber,0,30,0.0036,0.0035,0.0004,None
+Bibra_2025_Ingredients,Z3Satisfiable,True,30,0.0018,0.0017,0.0003,None
+Bibra_2025_Ingredients,Z3CoreFeatures,1,30,0.0033,0.0032,0.0004,None
+Bibra_2025_Ingredients,Z3DeadFeatures,0,30,0.0029,0.0028,0.0004,None
+Bibra_2025_Ingredients,Z3FalseOptionalFeatures,0,30,0.0029,0.0027,0.0004,None
+Bibra_2025_Ingredients,Z3ConfigurationsNumber,26,30,0.0543,0.0537,0.0117,None
+Bibra_2025,Z3Satisfiable,True,30,0.001,0.0009,0.0002,None
+Bibra_2025,Z3CoreFeatures,1,30,0.0018,0.0016,0.0004,None
+Bibra_2025,Z3DeadFeatures,0,30,0.0016,0.0015,0.0003,None
+Bibra_2025,Z3FalseOptionalFeatures,0,30,0.0012,0.0012,0.0001,None
+Bibra_2025,Z3ConfigurationsNumber,8,30,0.0091,0.009,0.0013,None
+Bibra_2025_Proteins,Z3Satisfiable,True,30,0.002,0.0019,0.0005,None
+Bibra_2025_Proteins,Z3CoreFeatures,1,30,0.0031,0.0028,0.0009,None
+Bibra_2025_Proteins,Z3DeadFeatures,0,30,0.0029,0.0028,0.0005,None
+Bibra_2025_Proteins,Z3FalseOptionalFeatures,0,30,0.0025,0.0021,0.0008,None
+Bibra_2025_Proteins,Z3ConfigurationsNumber,15,30,0.0233,0.0235,0.0047,None
+Bibra_2025_Salad,Z3Satisfiable,False,30,0.0039,0.0036,0.0011,None
+Bibra_2025_Salad,Z3CoreFeatures,0,30,0.0037,0.0035,0.0005,None
+Bibra_2025_Salad,Z3DeadFeatures,0,30,0.0036,0.0035,0.0005,None
+Bibra_2025_Salad,Z3FalseOptionalFeatures,72,30,0.0132,0.0129,0.001,None
+Bibra_2025_Salad,Z3ConfigurationsNumber,0,30,0.0034,0.0033,0.0003,None
+Turkish_2025_Ingredients,Z3Satisfiable,True,30,0.0013,0.0012,0.0003,None
+Turkish_2025_Ingredients,Z3CoreFeatures,1,30,0.003,0.0028,0.0006,None
+Turkish_2025_Ingredients,Z3DeadFeatures,0,30,0.0024,0.0023,0.0004,None
+Turkish_2025_Ingredients,Z3FalseOptionalFeatures,0,30,0.0026,0.0025,0.0004,None
+Turkish_2025_Ingredients,Z3ConfigurationsNumber,26,30,0.0468,0.0472,0.0092,None
+Turkish_2025_Kebab,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business10/Turkish_2025_Kebab.uvl: 'SeqRef' object has no attribute 'name',0,0.0,0.0,0.0,None
+Turkish_2025_Kebab,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business10/Turkish_2025_Kebab.uvl: 'SeqRef' object has no attribute 'name',0,0.0,0.0,0.0,None
+Turkish_2025_Kebab,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business10/Turkish_2025_Kebab.uvl: 'SeqRef' object has no attribute 'name',0,0.0,0.0,0.0,None
+Turkish_2025_Kebab,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business10/Turkish_2025_Kebab.uvl: 'SeqRef' object has no attribute 'name',0,0.0,0.0,0.0,None
+Turkish_2025_Kebab,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business10/Turkish_2025_Kebab.uvl: 'SeqRef' object has no attribute 'name',0,0.0,0.0,0.0,None
+Turkish_2025_Calzone,Z3Satisfiable,False,30,0.0017,0.0016,0.0003,None
+Turkish_2025_Calzone,Z3CoreFeatures,0,30,0.0017,0.0016,0.0003,None
+Turkish_2025_Calzone,Z3DeadFeatures,0,30,0.0017,0.0016,0.0003,None
+Turkish_2025_Calzone,Z3FalseOptionalFeatures,30,30,0.0022,0.0021,0.0002,None
+Turkish_2025_Calzone,Z3ConfigurationsNumber,0,30,0.0018,0.0017,0.0004,None
+Turkish_2025_Pizzas,Z3Satisfiable,True,30,0.0031,0.0027,0.0014,None
+Turkish_2025_Pizzas,Z3CoreFeatures,4,30,0.0046,0.0045,0.0003,None
+Turkish_2025_Pizzas,Z3DeadFeatures,0,30,0.0042,0.0039,0.0006,None
+Turkish_2025_Pizzas,Z3FalseOptionalFeatures,0,30,0.0031,0.003,0.0004,None
+Turkish_2025_Pizzas,Z3ConfigurationsNumber,78,30,0.1498,0.1369,0.0272,None
+Fuengirola_Pizzas,Z3Satisfiable,True,30,0.0023,0.002,0.0008,None
+Fuengirola_Pizzas,Z3CoreFeatures,2,30,0.0036,0.0035,0.0004,None
+Fuengirola_Pizzas,Z3DeadFeatures,0,30,0.0039,0.0037,0.0005,None
+Fuengirola_Pizzas,Z3FalseOptionalFeatures,2,30,0.0034,0.0031,0.0009,None
+Fuengirola_Pizzas,Z3ConfigurationsNumber,9857,0,0.0,0.0,0.0,60
+Bausatz_2025_Pfandl,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pfandl.uvl: Unsupported feature or attribute: Ingredients.Kidney Beans,0,0.0,0.0,0.0,None
+Bausatz_2025_Pfandl,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pfandl.uvl: Unsupported feature or attribute: Ingredients.Kidney Beans,0,0.0,0.0,0.0,None
+Bausatz_2025_Pfandl,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pfandl.uvl: Unsupported feature or attribute: Ingredients.Kidney Beans,0,0.0,0.0,0.0,None
+Bausatz_2025_Pfandl,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pfandl.uvl: Unsupported feature or attribute: Ingredients.Kidney Beans,0,0.0,0.0,0.0,None
+Bausatz_2025_Pfandl,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pfandl.uvl: Unsupported feature or attribute: Ingredients.Kidney Beans,0,0.0,0.0,0.0,None
+Bausatz_2025_ScrambledEggs,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_ScrambledEggs.uvl: Unsupported feature: Ingredients.Ingredients.Ingredients,0,0.0,0.0,0.0,None
+Bausatz_2025_ScrambledEggs,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_ScrambledEggs.uvl: Unsupported feature: Ingredients.Ingredients.Ingredients,0,0.0,0.0,0.0,None
+Bausatz_2025_ScrambledEggs,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_ScrambledEggs.uvl: Unsupported feature: Ingredients.Ingredients.Ingredients,0,0.0,0.0,0.0,None
+Bausatz_2025_ScrambledEggs,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_ScrambledEggs.uvl: Unsupported feature: Ingredients.Ingredients.Ingredients,0,0.0,0.0,0.0,None
+Bausatz_2025_ScrambledEggs,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_ScrambledEggs.uvl: Unsupported feature: Ingredients.Ingredients.Ingredients,0,0.0,0.0,0.0,None
+Bausatz_2025_Pasta,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pasta.uvl: Unsupported feature or attribute: Ingredients.Kidney Beans,0,0.0,0.0,0.0,None
+Bausatz_2025_Pasta,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pasta.uvl: Unsupported feature or attribute: Ingredients.Kidney Beans,0,0.0,0.0,0.0,None
+Bausatz_2025_Pasta,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pasta.uvl: Unsupported feature or attribute: Ingredients.Kidney Beans,0,0.0,0.0,0.0,None
+Bausatz_2025_Pasta,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pasta.uvl: Unsupported feature or attribute: Ingredients.Kidney Beans,0,0.0,0.0,0.0,None
+Bausatz_2025_Pasta,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pasta.uvl: Unsupported feature or attribute: Ingredients.Kidney Beans,0,0.0,0.0,0.0,None
+Bausatz_2022_Desserts,Z3Satisfiable,False,30,0.0029,0.0029,0.0005,None
+Bausatz_2022_Desserts,Z3CoreFeatures,0,30,0.0033,0.0029,0.001,None
+Bausatz_2022_Desserts,Z3DeadFeatures,0,30,0.0033,0.003,0.0009,None
+Bausatz_2022_Desserts,Z3FalseOptionalFeatures,18,30,0.0041,0.0034,0.0014,None
+Bausatz_2022_Desserts,Z3ConfigurationsNumber,0,30,0.0033,0.0031,0.0008,None
+Bausatz_2025_DrinkMix,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_DrinkMix.uvl: Unsupported feature: Spirits.Spirits.Spirits,0,0.0,0.0,0.0,None
+Bausatz_2025_DrinkMix,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_DrinkMix.uvl: Unsupported feature: Spirits.Spirits.Spirits,0,0.0,0.0,0.0,None
+Bausatz_2025_DrinkMix,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_DrinkMix.uvl: Unsupported feature: Spirits.Spirits.Spirits,0,0.0,0.0,0.0,None
+Bausatz_2025_DrinkMix,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_DrinkMix.uvl: Unsupported feature: Spirits.Spirits.Spirits,0,0.0,0.0,0.0,None
+Bausatz_2025_DrinkMix,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_DrinkMix.uvl: Unsupported feature: Spirits.Spirits.Spirits,0,0.0,0.0,0.0,None
+Bausatz_2025_Potatoes,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Potatoes.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Potatoes,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Potatoes.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Potatoes,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Potatoes.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Potatoes,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Potatoes.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Potatoes,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Potatoes.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Pizzas,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pizzas.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Pizzas,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pizzas.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Pizzas,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pizzas.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Pizzas,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pizzas.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Pizzas,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Pizzas.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Desserts,Z3Satisfiable,False,30,0.0025,0.0023,0.0004,None
+Bausatz_2025_Desserts,Z3CoreFeatures,0,30,0.0026,0.0025,0.0004,None
+Bausatz_2025_Desserts,Z3DeadFeatures,0,30,0.0027,0.0026,0.0005,None
+Bausatz_2025_Desserts,Z3FalseOptionalFeatures,14,30,0.0031,0.0029,0.0005,None
+Bausatz_2025_Desserts,Z3ConfigurationsNumber,0,30,0.0029,0.0027,0.0007,None
+Bausatz_2025_Burgers,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Burgers.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Burgers,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Burgers.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Burgers,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Burgers.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Burgers,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Burgers.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Burgers,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Burgers.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_ToastedBread,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_ToastedBread.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_ToastedBread,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_ToastedBread.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_ToastedBread,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_ToastedBread.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_ToastedBread,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_ToastedBread.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_ToastedBread,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_ToastedBread.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Ingredients,Z3Satisfiable,True,30,0.0084,0.0079,0.0014,None
+Bausatz_2025_Ingredients,Z3CoreFeatures,1,30,0.0166,0.0165,0.0013,None
+Bausatz_2025_Ingredients,Z3DeadFeatures,0,30,0.0143,0.0142,0.0009,None
+Bausatz_2025_Ingredients,Z3FalseOptionalFeatures,0,30,0.0115,0.0107,0.0031,None
+Bausatz_2025_Ingredients,Z3ConfigurationsNumber,59,30,0.2303,0.2208,0.031,None
+Bausatz_2025_Spirits,Z3Satisfiable,True,30,0.0039,0.004,0.0005,None
+Bausatz_2025_Spirits,Z3CoreFeatures,1,30,0.0059,0.006,0.0007,None
+Bausatz_2025_Spirits,Z3DeadFeatures,0,30,0.005,0.0049,0.0006,None
+Bausatz_2025_Spirits,Z3FalseOptionalFeatures,0,30,0.0036,0.0034,0.0005,None
+Bausatz_2025_Spirits,Z3ConfigurationsNumber,20,30,0.0413,0.0442,0.0064,None
+Bausatz_2022_Burgers,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2022_Burgers.uvl: context mismatch,0,0.0,0.0,0.0,None
+Bausatz_2022_Burgers,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2022_Burgers.uvl: context mismatch,0,0.0,0.0,0.0,None
+Bausatz_2022_Burgers,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2022_Burgers.uvl: context mismatch,0,0.0,0.0,0.0,None
+Bausatz_2022_Burgers,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2022_Burgers.uvl: context mismatch,0,0.0,0.0,0.0,None
+Bausatz_2022_Burgers,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2022_Burgers.uvl: context mismatch,0,0.0,0.0,0.0,None
+Bausatz_2025_Salads,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Salads.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Salads,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Salads.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Salads,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Salads.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Salads,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Salads.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+Bausatz_2025_Salads,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business01/Bausatz_2025_Salads.uvl: Unsupported feature or attribute: Ingredients.Bell Pepper,0,0.0,0.0,0.0,None
+FiveGuys_2024,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business03/FiveGuys_2024.uvl: Unsupported feature or attribute: FiveGuys.Price,0,0.0,0.0,0.0,None
+FiveGuys_2024,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business03/FiveGuys_2024.uvl: Unsupported feature or attribute: FiveGuys.Price,0,0.0,0.0,0.0,None
+FiveGuys_2024,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business03/FiveGuys_2024.uvl: Unsupported feature or attribute: FiveGuys.Price,0,0.0,0.0,0.0,None
+FiveGuys_2024,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business03/FiveGuys_2024.uvl: Unsupported feature or attribute: FiveGuys.Price,0,0.0,0.0,0.0,None
+FiveGuys_2024,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business03/FiveGuys_2024.uvl: Unsupported feature or attribute: FiveGuys.Price,0,0.0,0.0,0.0,None
+NamasteRincon_Pizza,Z3Satisfiable,"ERROR: Execution failed for Z3Satisfiable: True, False or Z3 Boolean expression expected. Received FeatureInfo(name='Oregano', sel=Oregano, val=None, ftype=<FeatureType.BOOLEAN: 'Boolean'>, attributes={}) of type <class 'flamapy.metamodels.z3_metamodel.models.z3_model.FeatureInfo'>",0,0.0,0.0,0.0,None
+NamasteRincon_Pizza,Z3CoreFeatures,"ERROR: Execution failed for Z3CoreFeatures: True, False or Z3 Boolean expression expected. Received FeatureInfo(name='Oregano', sel=Oregano, val=None, ftype=<FeatureType.BOOLEAN: 'Boolean'>, attributes={}) of type <class 'flamapy.metamodels.z3_metamodel.models.z3_model.FeatureInfo'>",0,0.0,0.0,0.0,None
+NamasteRincon_Pizza,Z3DeadFeatures,"ERROR: Execution failed for Z3DeadFeatures: True, False or Z3 Boolean expression expected. Received FeatureInfo(name='Oregano', sel=Oregano, val=None, ftype=<FeatureType.BOOLEAN: 'Boolean'>, attributes={}) of type <class 'flamapy.metamodels.z3_metamodel.models.z3_model.FeatureInfo'>",0,0.0,0.0,0.0,None
+NamasteRincon_Pizza,Z3FalseOptionalFeatures,"ERROR: Execution failed for Z3FalseOptionalFeatures: True, False or Z3 Boolean expression expected. Received FeatureInfo(name='Oregano', sel=Oregano, val=None, ftype=<FeatureType.BOOLEAN: 'Boolean'>, attributes={}) of type <class 'flamapy.metamodels.z3_metamodel.models.z3_model.FeatureInfo'>",0,0.0,0.0,0.0,None
+NamasteRincon_Pizza,Z3ConfigurationsNumber,"ERROR: Execution failed for Z3ConfigurationsNumber: True, False or Z3 Boolean expression expected. Received FeatureInfo(name='Oregano', sel=Oregano, val=None, ftype=<FeatureType.BOOLEAN: 'Boolean'>, attributes={}) of type <class 'flamapy.metamodels.z3_metamodel.models.z3_model.FeatureInfo'>",0,0.0,0.0,0.0,None
+JustSalad_2025_Dressings,Z3Satisfiable,True,30,0.0098,0.0096,0.0006,None
+JustSalad_2025_Dressings,Z3CoreFeatures,1,30,0.0155,0.0147,0.0019,None
+JustSalad_2025_Dressings,Z3DeadFeatures,0,30,0.016,0.0154,0.0016,None
+JustSalad_2025_Dressings,Z3FalseOptionalFeatures,0,30,0.0095,0.0089,0.0017,None
+JustSalad_2025_Dressings,Z3ConfigurationsNumber,2898,0,0.0,0.0,0.0,60
+JustSalad_2025_Proteins,Z3Satisfiable,True,30,0.005,0.0046,0.0011,None
+JustSalad_2025_Proteins,Z3CoreFeatures,1,30,0.0063,0.0058,0.0014,None
+JustSalad_2025_Proteins,Z3DeadFeatures,0,30,0.0064,0.0064,0.0006,None
+JustSalad_2025_Proteins,Z3FalseOptionalFeatures,0,30,0.0037,0.0035,0.0009,None
+JustSalad_2025_Proteins,Z3ConfigurationsNumber,3926,0,0.0,0.0,0.0,60
+JustSalad_2025_Premiums,Z3Satisfiable,True,30,0.0064,0.006,0.0013,None
+JustSalad_2025_Premiums,Z3CoreFeatures,1,30,0.0077,0.0074,0.001,None
+JustSalad_2025_Premiums,Z3DeadFeatures,0,30,0.0074,0.0067,0.0016,None
+JustSalad_2025_Premiums,Z3FalseOptionalFeatures,0,30,0.0042,0.004,0.0006,None
+JustSalad_2025_Premiums,Z3ConfigurationsNumber,6923,0,0.0,0.0,0.0,60
+JustSalad_2025,Z3Satisfiable,True,30,0.1372,0.1342,0.0119,None
+JustSalad_2025,Z3CoreFeatures,1,30,0.534,0.5247,0.0432,None
+JustSalad_2025,Z3DeadFeatures,1,30,0.5734,0.557,0.0467,None
+JustSalad_2025,Z3FalseOptionalFeatures,1,30,0.4436,0.4385,0.0333,None
+JustSalad_2025,Z3ConfigurationsNumber,1810,0,0.0,0.0,0.0,60
+JustSalad_2025_Greens,Z3Satisfiable,True,30,0.0048,0.0046,0.001,None
+JustSalad_2025_Greens,Z3CoreFeatures,1,30,0.0074,0.007,0.0016,None
+JustSalad_2025_Greens,Z3DeadFeatures,0,30,0.007,0.0064,0.0019,None
+JustSalad_2025_Greens,Z3FalseOptionalFeatures,0,30,0.0038,0.0036,0.0006,None
+JustSalad_2025_Greens,Z3ConfigurationsNumber,41,30,0.0459,0.0414,0.0131,None
+JustSalad_2025_Salad,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Salad.uvl: Unsupported feature or attribute: Essentials.Ingredients.Bob's Red Mill Hemp Hearts,0,0.0,0.0,0.0,None
+JustSalad_2025_Salad,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Salad.uvl: Unsupported feature or attribute: Essentials.Ingredients.Bob's Red Mill Hemp Hearts,0,0.0,0.0,0.0,None
+JustSalad_2025_Salad,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Salad.uvl: Unsupported feature or attribute: Essentials.Ingredients.Bob's Red Mill Hemp Hearts,0,0.0,0.0,0.0,None
+JustSalad_2025_Salad,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Salad.uvl: Unsupported feature or attribute: Essentials.Ingredients.Bob's Red Mill Hemp Hearts,0,0.0,0.0,0.0,None
+JustSalad_2025_Salad,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Salad.uvl: Unsupported feature or attribute: Essentials.Ingredients.Bob's Red Mill Hemp Hearts,0,0.0,0.0,0.0,None
+JustSalad_2025_Essentials,Z3Satisfiable,True,30,0.0201,0.0197,0.0017,None
+JustSalad_2025_Essentials,Z3CoreFeatures,1,30,0.0335,0.0325,0.0045,None
+JustSalad_2025_Essentials,Z3DeadFeatures,0,30,0.0338,0.033,0.0036,None
+JustSalad_2025_Essentials,Z3FalseOptionalFeatures,0,30,0.0224,0.0208,0.0031,None
+JustSalad_2025_Essentials,Z3ConfigurationsNumber,2374,0,0.0,0.0,0.0,60
+JustSalad_2025_Cheese,Z3Satisfiable,True,30,0.0051,0.0046,0.0015,None
+JustSalad_2025_Cheese,Z3CoreFeatures,1,30,0.0066,0.0062,0.0011,None
+JustSalad_2025_Cheese,Z3DeadFeatures,0,30,0.0074,0.0062,0.0033,None
+JustSalad_2025_Cheese,Z3FalseOptionalFeatures,0,30,0.0042,0.0039,0.001,None
+JustSalad_2025_Cheese,Z3ConfigurationsNumber,22525,0,0.0,0.0,0.0,60
+JustSalad_2025_Other,Z3Satisfiable,True,30,0.0025,0.0024,0.0009,None
+JustSalad_2025_Other,Z3CoreFeatures,1,30,0.0026,0.0023,0.0007,None
+JustSalad_2025_Other,Z3DeadFeatures,0,30,0.0023,0.0022,0.0006,None
+JustSalad_2025_Other,Z3FalseOptionalFeatures,0,30,0.0015,0.0013,0.0007,None
+JustSalad_2025_Other,Z3ConfigurationsNumber,5079,0,0.0,0.0,0.0,60
+JustSalad_2025_Bowl,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Bowl.uvl: Unsupported feature or attribute: Essentials.Ingredients.Basmati Rice,0,0.0,0.0,0.0,None
+JustSalad_2025_Bowl,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Bowl.uvl: Unsupported feature or attribute: Essentials.Ingredients.Basmati Rice,0,0.0,0.0,0.0,None
+JustSalad_2025_Bowl,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Bowl.uvl: Unsupported feature or attribute: Essentials.Ingredients.Basmati Rice,0,0.0,0.0,0.0,None
+JustSalad_2025_Bowl,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Bowl.uvl: Unsupported feature or attribute: Essentials.Ingredients.Basmati Rice,0,0.0,0.0,0.0,None
+JustSalad_2025_Bowl,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Bowl.uvl: Unsupported feature or attribute: Essentials.Ingredients.Basmati Rice,0,0.0,0.0,0.0,None
+JustSalad_2025_Additions,Z3Satisfiable,True,30,0.0017,0.0017,0.0003,None
+JustSalad_2025_Additions,Z3CoreFeatures,1,30,0.0026,0.0022,0.001,None
+JustSalad_2025_Additions,Z3DeadFeatures,0,30,0.0026,0.0023,0.0008,None
+JustSalad_2025_Additions,Z3FalseOptionalFeatures,0,30,0.0017,0.0016,0.0003,None
+JustSalad_2025_Additions,Z3ConfigurationsNumber,5,30,0.0076,0.0075,0.0012,None
+JustSalad_2025_Wraps,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Wraps.uvl: Unsupported feature or attribute: Essentials.Ingredients.Bob's Red Mill Hemp Hearts,0,0.0,0.0,0.0,None
+JustSalad_2025_Wraps,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Wraps.uvl: Unsupported feature or attribute: Essentials.Ingredients.Bob's Red Mill Hemp Hearts,0,0.0,0.0,0.0,None
+JustSalad_2025_Wraps,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Wraps.uvl: Unsupported feature or attribute: Essentials.Ingredients.Bob's Red Mill Hemp Hearts,0,0.0,0.0,0.0,None
+JustSalad_2025_Wraps,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Wraps.uvl: Unsupported feature or attribute: Essentials.Ingredients.Bob's Red Mill Hemp Hearts,0,0.0,0.0,0.0,None
+JustSalad_2025_Wraps,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business11/JustSalad_2025_Wraps.uvl: Unsupported feature or attribute: Essentials.Ingredients.Bob's Red Mill Hemp Hearts,0,0.0,0.0,0.0,None
+JustSalad_2025_Bases,Z3Satisfiable,True,30,0.0045,0.0042,0.0006,None
+JustSalad_2025_Bases,Z3CoreFeatures,1,30,0.006,0.0056,0.0013,None
+JustSalad_2025_Bases,Z3DeadFeatures,0,30,0.0063,0.0055,0.0021,None
+JustSalad_2025_Bases,Z3FalseOptionalFeatures,0,30,0.0038,0.0031,0.0013,None
+JustSalad_2025_Bases,Z3ConfigurationsNumber,6706,0,0.0,0.0,0.0,60
+PizzeriaLaTradizionale,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business09/PizzeriaLaTradizionale.uvl: sort mismatch,0,0.0,0.0,0.0,None
+PizzeriaLaTradizionale,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business09/PizzeriaLaTradizionale.uvl: sort mismatch,0,0.0,0.0,0.0,None
+PizzeriaLaTradizionale,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business09/PizzeriaLaTradizionale.uvl: sort mismatch,0,0.0,0.0,0.0,None
+PizzeriaLaTradizionale,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business09/PizzeriaLaTradizionale.uvl: sort mismatch,0,0.0,0.0,0.0,None
+PizzeriaLaTradizionale,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business09/PizzeriaLaTradizionale.uvl: sort mismatch,0,0.0,0.0,0.0,None
+LaGondolaDeYdai_Pizza,Z3Satisfiable,False,30,0.0039,0.0035,0.0011,None
+LaGondolaDeYdai_Pizza,Z3CoreFeatures,0,30,0.0039,0.0034,0.0011,None
+LaGondolaDeYdai_Pizza,Z3DeadFeatures,0,30,0.0039,0.0038,0.0008,None
+LaGondolaDeYdai_Pizza,Z3FalseOptionalFeatures,53,30,0.0054,0.0054,0.0005,None
+LaGondolaDeYdai_Pizza,Z3ConfigurationsNumber,0,30,0.0035,0.0034,0.0005,None
+Ohana_2022_Poke,Z3Satisfiable,False,30,0.4206,0.4097,0.0399,None
+Ohana_2022_Poke,Z3CoreFeatures,0,30,0.4381,0.4255,0.0609,None
+Ohana_2022_Poke,Z3DeadFeatures,0,30,0.4139,0.4109,0.0259,None
+Ohana_2022_Poke,Z3FalseOptionalFeatures,62,30,0.3083,0.2926,0.0464,None
+Ohana_2022_Poke,Z3ConfigurationsNumber,0,30,0.4133,0.4075,0.0315,None
+Ohana_2022_Salad,Z3Satisfiable,True,30,0.004,0.0036,0.0008,None
+Ohana_2022_Salad,Z3CoreFeatures,7,30,0.0097,0.0092,0.0024,None
+Ohana_2022_Salad,Z3DeadFeatures,3,30,0.0085,0.0084,0.0011,None
+Ohana_2022_Salad,Z3FalseOptionalFeatures,0,30,0.0062,0.0059,0.0008,None
+Ohana_2022_Salad,Z3ConfigurationsNumber,7735,0,0.0,0.0,0.0,60
+Ohana_2022_Burger,Z3Satisfiable,False,30,0.0069,0.0066,0.0012,None
+Ohana_2022_Burger,Z3CoreFeatures,0,30,0.0068,0.0068,0.0009,None
+Ohana_2022_Burger,Z3DeadFeatures,0,30,0.007,0.007,0.001,None
+Ohana_2022_Burger,Z3FalseOptionalFeatures,41,30,0.0095,0.0088,0.0026,None
+Ohana_2022_Burger,Z3ConfigurationsNumber,0,30,0.0069,0.0066,0.001,None

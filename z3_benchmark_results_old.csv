@@ -1,0 +1,57 @@
+Model Name,Operation,Result,Runs,Time_Mean (s),Time_Median (s),Time_StdDev (s),Timeout (s)
+Pizza,Z3Satisfiable,True,30,0.0018,0.0017,0.0002,None
+Pizza,Z3CoreFeatures,4,30,0.0024,0.0024,0.0001,None
+Pizza,Z3DeadFeatures,0,30,0.0023,0.0022,0.0003,None
+Pizza,Z3FalseOptionalFeatures,0,30,0.0015,0.0015,0.0001,None
+Pizza,Z3ConfigurationsNumber,57,30,0.0552,0.0541,0.0114,None
+LaGalerna_2020_Salads,Z3Satisfiable,True,30,0.0044,0.0018,0.0141,None
+LaGalerna_2020_Salads,Z3CoreFeatures,4,30,0.0052,0.0044,0.0029,None
+LaGalerna_2020_Salads,Z3DeadFeatures,0,30,0.0041,0.0041,0.0001,None
+LaGalerna_2020_Salads,Z3FalseOptionalFeatures,0,30,0.0037,0.0037,0.0001,None
+LaGalerna_2020_Salads,Z3ConfigurationsNumber,3684,0,0.0,0.0,0.0,60
+LaGalerna_2020_Burgers,Z3Satisfiable,True,30,0.0022,0.0022,0.0002,None
+LaGalerna_2020_Burgers,Z3CoreFeatures,7,30,0.0044,0.0044,0.0004,None
+LaGalerna_2020_Burgers,Z3DeadFeatures,0,30,0.0042,0.0041,0.0005,None
+LaGalerna_2020_Burgers,Z3FalseOptionalFeatures,0,30,0.0032,0.0031,0.0002,None
+LaGalerna_2020_Burgers,Z3ConfigurationsNumber,6224,0,0.0,0.0,0.0,60
+LaGalerna_2023_Salads,Z3Satisfiable,False,30,0.0009,0.0009,0.0,None
+LaGalerna_2023_Salads,Z3CoreFeatures,0,30,0.0009,0.0009,0.0003,None
+LaGalerna_2023_Salads,Z3DeadFeatures,0,30,0.0009,0.0009,0.0002,None
+LaGalerna_2023_Salads,Z3FalseOptionalFeatures,42,30,0.0022,0.0022,0.0,None
+LaGalerna_2023_Salads,Z3ConfigurationsNumber,0,30,0.0009,0.0009,0.0001,None
+LaGalerna_2020_Sandwiches,Z3Satisfiable,True,30,0.002,0.002,0.0002,None
+LaGalerna_2020_Sandwiches,Z3CoreFeatures,6,30,0.0048,0.0046,0.0009,None
+LaGalerna_2020_Sandwiches,Z3DeadFeatures,0,30,0.0048,0.0045,0.0006,None
+LaGalerna_2020_Sandwiches,Z3FalseOptionalFeatures,0,30,0.0039,0.0037,0.0005,None
+LaGalerna_2020_Sandwiches,Z3ConfigurationsNumber,3633,0,0.0,0.0,0.0,60
+Bibra_2025_Wraps,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business02/Bibra_2025_Wraps.uvl: Unsupported feature or attribute: Bibra_2025_Proteins.Canned tuna,0,0.0,0.0,0.0,None
+Bibra_2025_Wraps,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business02/Bibra_2025_Wraps.uvl: Unsupported feature or attribute: Bibra_2025_Proteins.Canned tuna,0,0.0,0.0,0.0,None
+Bibra_2025_Wraps,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business02/Bibra_2025_Wraps.uvl: Unsupported feature or attribute: Bibra_2025_Proteins.Canned tuna,0,0.0,0.0,0.0,None
+Bibra_2025_Wraps,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business02/Bibra_2025_Wraps.uvl: Unsupported feature or attribute: Bibra_2025_Proteins.Canned tuna,0,0.0,0.0,0.0,None
+Bibra_2025_Wraps,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business02/Bibra_2025_Wraps.uvl: Unsupported feature or attribute: Bibra_2025_Proteins.Canned tuna,0,0.0,0.0,0.0,None
+Bibra_2025_Dressings,Z3Satisfiable,True,30,0.0019,0.0011,0.0037,None
+Bibra_2025_Dressings,Z3CoreFeatures,1,30,0.0021,0.002,0.0005,None
+Bibra_2025_Dressings,Z3DeadFeatures,0,30,0.0018,0.0017,0.0001,None
+Bibra_2025_Dressings,Z3FalseOptionalFeatures,0,30,0.0017,0.0016,0.0004,None
+Bibra_2025_Dressings,Z3ConfigurationsNumber,14,30,0.0198,0.0207,0.0028,None
+Bibra_2025_Marinades,Z3Satisfiable,True,30,0.0012,0.0011,0.0004,None
+Bibra_2025_Marinades,Z3CoreFeatures,1,30,0.0016,0.0015,0.0003,None
+Bibra_2025_Marinades,Z3DeadFeatures,0,30,0.0016,0.0014,0.0005,None
+Bibra_2025_Marinades,Z3FalseOptionalFeatures,0,30,0.0014,0.0013,0.0004,None
+Bibra_2025_Marinades,Z3ConfigurationsNumber,6,30,0.0069,0.007,0.0006,None
+Bibra_2025_FinalTouch,Z3Satisfiable,True,30,0.001,0.001,0.0003,None
+Bibra_2025_FinalTouch,Z3CoreFeatures,1,30,0.0016,0.0016,0.0001,None
+Bibra_2025_FinalTouch,Z3DeadFeatures,0,30,0.0017,0.0015,0.0006,None
+Bibra_2025_FinalTouch,Z3FalseOptionalFeatures,0,30,0.0015,0.0013,0.0004,None
+Bibra_2025_FinalTouch,Z3ConfigurationsNumber,12,30,0.0154,0.0162,0.0028,None
+Bibra_2025_Bases,Z3Satisfiable,True,30,0.001,0.0009,0.0003,None
+Bibra_2025_Bases,Z3CoreFeatures,1,30,0.0013,0.0013,0.0001,None
+Bibra_2025_Bases,Z3DeadFeatures,0,30,0.0012,0.0012,0.0001,None
+Bibra_2025_Bases,Z3FalseOptionalFeatures,0,30,0.0011,0.0011,0.0001,None
+Bibra_2025_Bases,Z3ConfigurationsNumber,5,30,0.0057,0.0057,0.0004,None
+Bibra_2025_Pokebowls,Z3Satisfiable,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business02/Bibra_2025_Pokebowls.uvl: Unsupported feature or attribute: Bibra_2025_Proteins.Flambeed teriyaki salmon,0,0.0,0.0,0.0,None
+Bibra_2025_Pokebowls,Z3CoreFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business02/Bibra_2025_Pokebowls.uvl: Unsupported feature or attribute: Bibra_2025_Proteins.Flambeed teriyaki salmon,0,0.0,0.0,0.0,None
+Bibra_2025_Pokebowls,Z3DeadFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business02/Bibra_2025_Pokebowls.uvl: Unsupported feature or attribute: Bibra_2025_Proteins.Flambeed teriyaki salmon,0,0.0,0.0,0.0,None
+Bibra_2025_Pokebowls,Z3FalseOptionalFeatures,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business02/Bibra_2025_Pokebowls.uvl: Unsupported feature or attribute: Bibra_2025_Proteins.Flambeed teriyaki salmon,0,0.0,0.0,0.0,None
+Bibra_2025_Pokebowls,Z3ConfigurationsNumber,ERROR: transforming FM to Z3 model from resources/models/dataset_RestaurantDomain/Business02/Bibra_2025_Pokebowls.uvl: Unsupported feature or attribute: Bibra_2025_Proteins.Flambeed teriyaki salmon,0,0.0,0.0,0.0,None
+Bibra_2025_Ingredients,Z3Satisfiable,True,30,0.0019,0.0018,0.0003,None

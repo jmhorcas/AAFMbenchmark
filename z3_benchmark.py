@@ -6,7 +6,8 @@ from pathlib import Path
 from typing import Any, Optional, Callable
 
 from flamapy.core.operations import Operation
-from flamapy.metamodels.fm_metamodel.transformations import UVLReader
+from flamapy.metamodels.fm_metamodel.transformations import UVLReader, FlatFM
+from flamapy.metamodels.fm_metamodel.transformations.refactorings import FeatureCardinalityRefactoring
 from flamapy.metamodels.z3_metamodel.models import Z3Model
 from flamapy.metamodels.z3_metamodel.transformations import FmToZ3
 from flamapy.metamodels.z3_metamodel.operations import (
@@ -47,6 +48,13 @@ OPERATIONS = {'Satisfiable': Z3Satisfiable,
 def worker_execute(op_class: Callable, fm_path: str, shared_data: DictProxy) -> None:
     try:
         fm_model = UVLReader(fm_path).transform()
+        # Flat the FM
+        flat_op = FlatFM(fm_model)
+        flat_op.set_maintain_namespaces(False)
+        fm_model = flat_op.transform()
+
+        # Refactor feature cardinalities
+        #fm_model = FeatureCardinalityRefactoring(fm_model).transform()
     except Exception as e:
         shared_data['status'] = f'ERROR: reading FM model from {fm_path}: {e}'
         return
@@ -109,7 +117,7 @@ def execute_operation_on_model(model_name: str,
                     process.join()  # Wait for termination (necessary to free resources)
 
                     # Report timeout status and partial result
-                    result = shared_data['partial_result']
+                    result = shared_data.get('partial_result', None)
                     shared_data['status'] = 'TIMEOUT'
                     is_timeout = True
                     break  # No need to continue repetitions on timeout
