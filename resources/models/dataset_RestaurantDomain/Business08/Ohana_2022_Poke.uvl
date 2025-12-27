@@ -78,5 +78,3 @@ features
         optional
             "Extra fish" {Price 3}
             "Extra sauce" {Price 1}
-constraints
-    "Poke Bowl".Price == sum(Price, "Poke Bowl")

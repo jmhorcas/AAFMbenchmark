@@ -24,4 +24,4 @@ features
                     Applesauce
                     "Vanilla sauce" {Allergen {Lactose}}
 constraints
-    "Dessert Bausatz".Price == sum(Price, "Dessert Bausatz") - 2.00
+    "Dessert Bausatz".Price == -2.00

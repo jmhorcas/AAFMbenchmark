@@ -20,4 +20,4 @@ features
                     "Honey"
                     Nutella {Price 1.10, Allergen {Lactose, Soy, Nuts}}
 constraints
-    "Dessert Bausatz".Price == sum(Price, "Dessert Bausatz") - 2.00
+    "Dessert Bausatz".Price == -2.00

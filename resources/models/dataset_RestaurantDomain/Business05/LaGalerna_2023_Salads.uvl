@@ -50,4 +50,4 @@ features
 constraints
 	Table > 0
 	len("Your name") > 0
-	Salad.Price == sum(Price, Salad) + 9.95
+	Salad.Price == 9.95

@@ -38,4 +38,4 @@ constraints
     !Essentials.Ingredients."Shaved Parmesan"
     !Essentials.Ingredients."Shredded Cabbage"
     !Essentials.Ingredients."Basmati Rice"
-    Wrap.Price == 9.99 + sum(Price, Wrap)
+    Wrap.Price == 9.99

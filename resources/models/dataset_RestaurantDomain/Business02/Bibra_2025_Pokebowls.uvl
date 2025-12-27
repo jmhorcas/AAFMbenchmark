@@ -50,4 +50,3 @@ constraints
     !Bibra_2025_Dressings."Homemade hummus"
     !Bibra_2025_FinalTouch.Dates
     !Bibra_2025_FinalTouch."Semi-dried tomato"
-    Pokebowls.Price == sum(Price, Pokebowls)

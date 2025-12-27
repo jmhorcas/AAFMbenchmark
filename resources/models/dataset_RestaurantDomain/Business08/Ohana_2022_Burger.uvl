@@ -59,5 +59,4 @@ features
             "Extra chips" {Price 2.50}
             "Extra dressing" {Price 1}
 constraints
-    Burger.Price == sum(Price, Burger)
     len("Meat point") > 0

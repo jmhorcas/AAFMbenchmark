@@ -33,7 +33,7 @@ features
             Other.Other
             Bread
 constraints
-    Salad.Price == sum(Price, Salad) + 9.99
+    Salad.Price == 9.99
     !Essentials.Ingredients."Bob's Red Mill Hemp Hearts"
     !Essentials.Ingredients."Chopped Almonds"
     !Essentials.Ingredients."Crumbled Feta"

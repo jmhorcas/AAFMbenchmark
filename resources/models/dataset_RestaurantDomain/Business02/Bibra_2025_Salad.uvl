@@ -38,4 +38,4 @@ constraints
     !Bibra_2025_FinalTouch.Chives
     !Bibra_2025_FinalTouch.Coriander
     !Bibra_2025_FinalTouch."Dried oregano"
-    Salad.Price == 10.95 + sum(Price, Salad)
+    Salad.Price == 10.95

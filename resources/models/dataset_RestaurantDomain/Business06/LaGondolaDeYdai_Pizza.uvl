@@ -67,7 +67,6 @@ constraints
 	"Closed pizza" => ! "Gluten free"
 	"Closed pizza" => Medium | Big
 	"Double base" => Medium | Big
-	Pizza.Price == sum(Price, Pizza)
 	"Gluten free" & Mini => Pizza.Price == Pizza.Price + 0.50
 	"Gluten free" & Medium => Pizza.Price == Pizza.Price + 1.00
 	"Double base" & Medium => Pizza.Price == Pizza.Price + 1.00

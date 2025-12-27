@@ -40,4 +40,4 @@ constraints
     !Bibra_2025_FinalTouch.Dates
     !Bibra_2025_FinalTouch.Furikake
     !Bibra_2025_FinalTouch."Semi-dried tomato"
-    Wraps.Price == 9.95 + sum(Price, Wraps)
+    Wraps.Price == 9.95

@@ -33,7 +33,6 @@ features
             "Yogurt sauce"
             "French fries"
 constraints
-    Kebab.Price == sum(Price, Kebab)
     "Grilled taco" => !XL
     Complete => Lettuce & Tomato & Onion & Egg & "Yogurt sauce"
     "Only meat" => !Vegetables & !Egg & !Cheese
